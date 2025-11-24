@@ -1,0 +1,211 @@
+{
+  "info": {
+    "_postman_id": "d08b9716-1c3a-48f5-8895-8e167cad47df",
+    "name": "GUIA-10-SEBASTIAN-SANCHEZ-POSTMAN",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Obtener todos los usuarios",
+      "id": "1f1378e3-c5dd-48d0-9a2f-3cde3c77bd7b",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obtener un usuario",
+      "id": "8eda429b-2682-4a5c-8fb2-44fa6341ca45",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/user",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obtener usuario por ID",
+      "id": "90d369c2-f643-4f76-bb50-99a552d7a61d",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/users/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "7"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mensaje personalizado",
+      "id": "ab60477c-7cf7-418f-82c2-21bd7d0efbf3",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/hello/manito",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "hello",
+            "manito"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Crear un nuevo usuario",
+      "id": "ff0aadd3-ed41-4f17-889a-404682dd7d99",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "admin",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"CuloTauro\",\r\n    \"age\": 25,\r\n    \"email\": \"CuloTauro@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Actualizar un usuario",
+      "id": "7f504aee-809b-4cba-ae54-82dbce667996",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "admin",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"María Antonieta Act\",\r\n  \"age\": 34,\r\n  \"email\": \"maria.actualizada@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Eliminar un usuario",
+      "id": "4a407093-2f44-469a-9539-721446edfe04",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "admin",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "2"
+          ]
+        }
+      }
+    }
+  ]
+}

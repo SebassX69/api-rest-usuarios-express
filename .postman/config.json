@@ -1,0 +1,14 @@
+{
+  "workspace": {
+    "id": ""
+  },
+  "entities": {
+    "collections": [
+      "..\\postman\\collections\\GUIA-10-SEBASTIAN-SANCHEZ-POSTMAN.postman_collection.json"
+    ],
+    "environments": [],
+    "specs": [],
+    "flows": [],
+    "globals": []
+  }
+}
