@@ -75,6 +75,25 @@ Para realizar operaciones POST, PUT y DELETE, se requiere autenticación Basic A
 3. Selecciona "Basic Auth"
 4. Ingresa el usuario y contraseña
 
+### Importar Colección de Postman
+
+Para facilitar las pruebas de la API, puedes importar la colección de Postman incluida en el proyecto:
+
+1. Abre Postman
+2. Haz clic en "Import" 
+3. Selecciona el archivo `GUIA-10-SEBASTIAN-SANCHEZ-POSTMAN.postman_collection.json`
+4. La colección se importará con todas las peticiones preconfiguradas, incluyendo:
+   - Obtener todos los usuarios
+   - Obtener un usuario
+   - Obtener usuario por ID
+   - Mensaje personalizado
+   - Crear un nuevo usuario (con autenticación configurada)
+   - Actualizar un usuario (con autenticación configurada)
+   - Eliminar un usuario (con autenticación configurada)
+
+Todas las peticiones que requieren autenticación ya tienen configuradas las credenciales de Basic Auth.
+
+## Notas
 
 - La base de datos SQLite se crea automáticamente en el directorio raíz del proyecto
 - El archivo de base de datos (`database.sqlite`) está en `.gitignore` para no versionarlo
